@@ -6,7 +6,6 @@
 	<dict>
 		<key>Add</key>
 		<array>
-			<!-- Optional -->
 			<dict>
 				<key>Comment</key>
 				<string>Disable Broadcom card during sleep</string>
@@ -29,9 +28,8 @@
 				<key>Path</key>
 				<string>SSDT-OFFDGPU.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
-			<!-- /Optional -->
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-AC</string>
@@ -418,7 +416,6 @@
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
 			</dict>
-			<!-- ThinkPad Assistant -->
 			<dict>
 				<key>Comment</key>
 				<string>_Q6A to XQ6A (F4 - Microphone Mute)</string>
@@ -679,7 +676,6 @@
 				<key>TableSignature</key>
 				<data></data>
 			</dict>
-			<!-- /ThinkPad Assistant -->
 			<dict>
 				<key>Comment</key>
 				<string>Change _OSI to XOSI</string>
@@ -901,17 +897,17 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm-Monterey.kext</string>
+				<string>AirportItlwm-Sonoma.kext</string>
 				<key>Comment</key>
-				<string>AirportItlwm (Monterey)</string>
+				<string>AirportItlwm (Sonoma)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
-				<string>21.99.99</string>
+				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>21.0.0</string>
+				<string>23.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -923,7 +919,7 @@
 				<key>Comment</key>
 				<string>AirportItlwm (BigSur)</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
@@ -1016,6 +1012,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooRMI</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
+				<key>Comment</key>
+				<string>RestrictEvents.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1200,6 +1214,24 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ECEnabler.kext</string>
+				<key>Comment</key>
+				<string>ECEnabler.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ECEnabler</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1567,11 +1599,29 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>IntelBluetoothInjector.kext</string>
 				<key>Comment</key>
 				<string>IntelBluetoothInjector.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -1621,13 +1671,67 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>BlueToolFixup.kext</string>
+				<string>FeatureUnlock.kext</string>
 				<key>Comment</key>
-				<string>BlueToolFixup.kext</string>
+				<string>FeatureUnlock.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BlueToolFixup</string>
+				<string>Contents/MacOS/FeatureUnlock</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Comment</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Comment</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1997,9 +2101,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -2441,8 +2545,19 @@
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>New String</key>
+				<string></string>
 				<key>rtc-blacklist</key>
 				<data></data>
+			</dict>
+			<key>E09B9297-7928-4440-9AAB-D1F8536FBF0A</key>
+			<dict>
+				<key>hbfx-disable-patch-pciz</key>
+				<true/>
+				<key>hbfx-patch-pciz</key>
+				<string>none</string>
+				<key>hbfx-ahbmz</key>
+				<integer>545</integer>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
@@ -2453,9 +2568,9 @@
 				<key>boot-args</key>
 				<string>rtcfx_exclude=80-AB</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>AwAAAA==</data>
 				<key>prev-lang:kbd</key>
-				<string>de-DE:3</string>
+				<string>en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -2466,7 +2581,7 @@
 			<array>
 				<string>DefaultBackgroundColor</string>
 			</array>
-			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30103</key>
 			<array>
 				<string>rtc-blacklist</string>
 			</array>
@@ -2520,13 +2635,13 @@
 			<key>AdviseFeatures</key>
 			<true/>
 			<key>MLB</key>
-			<string>00000000000000000</string>
+			<string>C02002902QXJH4RUE</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>AAAAAAAA</data>
+			<data>yB7ndBji</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -2534,9 +2649,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>000000000000</string>
+			<string>C02C3RZTJHCC</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>876B3D00-B949-4248-A635-212402F60FCF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
